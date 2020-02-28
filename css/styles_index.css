@@ -1,0 +1,52 @@
+body{
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+    background:url(../img/background_index.PNG); 
+}
+
+div{
+    width: 375px;
+	height: auto;
+	background: white;
+	color: black;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 30px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+input.login{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: black;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+input.submit{
+    background: transparent;
+    margin-top: 10px;
+    margin-bottom: 13px;
+	outline: none;
+	height: 40px;
+	color: black;
+    font-size: 16px;
+    border-radius: 15px;
+    width: 100%;
+    transition: 0.25s;
+}
+
+input.submit:hover{
+    background: aquamarine;
+}
+

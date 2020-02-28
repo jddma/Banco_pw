@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles_index.css">
+        <title>Registrarse</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="title">Por favor ingresa tus datos</h1>
+            <form action="../includes/registrarse.php" method="post">
+                <input class="login" type="text" name="name" placeholder="Ingrese sus nombres" required>
+                <input class="login" type="text" name="last_name" placeholder="Ingrese sus apellidos" required>
+                <input class="login" type="text" name="document" placeholder="Ingrese su documento" required>
+                <input class="login" type="email" name="email" placeholder="Ingrese su correo" required>
+                <input class="login" type="password" name="password" placeholder="Ingrese su contraseña" required>
+                <input class="login" type="password" name="verify_password" placeholder="Confirme su contraseña" required>
+                <input class="submit" type="submit" value="Registrarme ahora">
+            </form>
+        </div>
+    </body>
+</html>
