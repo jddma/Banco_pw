@@ -1,9 +1,10 @@
 <?
 
     session_start();
-    if(isset($_SESSION["correo"]))
+    if(isset($_SESSION["id"]))
     {
-
+        header("Location: panel/");
+        exit();
     }
 
 ?>

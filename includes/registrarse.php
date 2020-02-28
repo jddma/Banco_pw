@@ -12,6 +12,11 @@
         header("Location: ../registrarse");
         exit();
     }
+    else if($_POST["password"] != $_POST["verify_password"])
+    {
+        header("Location: ../registrarse/");
+        exit();
+    }
     else
     {
         require_once "database.php";
@@ -20,9 +25,9 @@
         $result=$conn->prepare($sql);
         $result->bindValue(":correo", $email);
         $result->execute();
-        if($result->rowCount > 0)
+        if($result->rowCount() > 0)
         {
-            header("Location: ../registrarse");
+            header("Location: ../registrarse/");
             exit();
         }
 
@@ -33,6 +38,9 @@
         $result->bindValue(":no_documento",$_POST["document"]);
         $result->bindValue(":correo",$_POST["email"]);
         $result->bindValue(":clave", password_hash($_POST["password"], PASSWORD_DEFAULT));
+        $result->execute();
+
+        header("Location: ../");
 
     }
 
