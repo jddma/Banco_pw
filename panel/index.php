@@ -22,7 +22,7 @@
     <body>
     <?php
 
-        echo "Hola señor/a " . $_SESSION["apellidos"] . $_SESSION["nombres"];
+        echo "esta es una zona reservada para usuaros dicho esto hola señor(a) " . $_SESSION["apellidos"] . " " . $_SESSION["nombres"];
 
     ?>
     </body>
