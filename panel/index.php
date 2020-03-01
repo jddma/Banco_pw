@@ -27,10 +27,8 @@
             <img src="../img/logo_panel.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Tu banco
             </a>
-            <form class="form-inline">
-                <input class="btn btn-success my-2 my-sm-0" type="button">Mi Cuenta</input>_
-                <a href="../includes/cerrar_sesion.php"><input class="btn btn-danger my-2 my-sm-0" type="button" value="Cerrar Sesión">></a>
-            </form>
+            <input class="btn btn-success my-2 my-sm-0" type="button" value="Mi cuenta">
+            <a href="../includes/cerrar_sesion.php"><input class="btn btn-danger my-2 my-sm-0" type="button" value="Cerrar Sesión"></a>
         </nav>
         <div class="container">
             <?php
