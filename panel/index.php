@@ -11,7 +11,7 @@
         exit();
     }
 
-?>
+?>-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -39,9 +39,11 @@
                 </label>
             </ul>
         </div>
-        <div class="content"></div>
-            <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
-            <p><?php echo "Bienvenido señor(a) ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]?></p>
+        <div class="content">
+            <div class="usuario">
+                <!--<img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
+                <p>?php echo "Bienvenido señor(a) ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]?></p>-->
+            </div>
         </div>
     </body>
 </html>
