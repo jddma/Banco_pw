@@ -73,6 +73,39 @@ input[type = "button"]{
     cursor: pointer;
 }
 
+h2{
+    margin-left: 10px;
+}
+
+img.logo-header{
+    height: auto;
+    width: 60px;
+    float: left;
+    margin-top: 20px;
+}
+
+img.user-logo{
+    float: left;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: -23px;
+}
+
+.usuario{
+    height: 50px;
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 40px;
+    background-color: #34495e;
+}
+
+p{
+    margin-left: 150px;
+    padding-top: 10px;
+    font-size: 25px;
+    color: white;
+}
+
 @media screen and (max-width:800px){
     .show-menu-btn, .hide-menu-btn{
         display: block;
@@ -105,29 +138,25 @@ input[type = "button"]{
         right: 0;
 
     }
-}
 
-h2{
-    margin-left: 10px;
-}
+    .usuario{
+        margin-top: 20%;
+        margin-left: 0;
+        height: 100px
+    }
 
-img{
-    height: auto;
-    width: 60px;
-    float: left;
-    margin-top: 20px;
-}
+    img.user-logo{
+        float: left;
+        width: 100px;
+        margin-left: 40%;
+        margin-top: -18%;
+    }
 
-/*img.user-logo{
-    margin-left: 30px;
-    margin-right: 15px;
-    height: 5%;
-    width: 5%;
+    p{
+        padding-top: 40px;
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
 }
-
-.usuario{
-    height: 10%;
-    width: 100%;
-    margin-top: 20px;
-    background-color: black;
-}*/

@@ -24,7 +24,7 @@
     </head>
     <body>
         <div class="header">
-            <a><img src="../img/logo_panel.png" alt=""></a>
+            <a><img class="logo-header" src="../img/logo_panel.png" alt=""></a>
             <h2 class="logo">Mi Banco</h2>
             <input type="checkbox" id="chk">
             <label for="chk" class="show-menu-btn">
@@ -41,8 +41,8 @@
         </div>
         <div class="content">
             <div class="usuario">
-                <!--<img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
-                <p>?php echo "Bienvenido señor(a) ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]?></p>-->
+                <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
+                <p><?php echo "Bienvenido señor(a) ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
             </div>
         </div>
     </body>
