@@ -29,7 +29,7 @@
             </a>
             <form class="form-inline">
                 <button class="btn btn-success my-2 my-sm-0" type="submit">Mi Cuenta</button>_
-                <button class="btn btn-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+                <a href="../includes/cerrar_sesion.php"><button class="btn btn-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button></a>
             </form>
         </nav>
         <div class="container">
