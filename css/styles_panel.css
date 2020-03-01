@@ -136,9 +136,7 @@ p{
     }
     #chk:checked ~ .menu{
         right: 0;
-
     }
-
     .usuario{
         margin-top: 20%;
         margin-left: 0;
