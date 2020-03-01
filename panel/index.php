@@ -17,23 +17,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio</title>
         <link rel="stylesheet" href="../css/styles_panel.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <title>Inicio</title>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand">
-            <img src="../img/logo_panel.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Tu banco
-            </a>
-            <input class="btn btn-success my-2 my-sm-0" type="button" value="Mi cuenta">
-            <a href="../includes/cerrar_sesion.php"><input class="btn btn-danger my-2 my-sm-0" type="button" value="Cerrar Sesión"></a>
-        </nav>
-        <div class="container">
-            <?php
-                echo "Esta es una zona reservada para usuaros dicho esto hola señor(a) " . $_SESSION["apellidos"] . " " . $_SESSION["nombres"];
-            ?>
+        <div class="header">
+            <h2 class="logo">Mi Banco</h2>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-ellipsis-h"></i>
+            </label>
+            <ul class="menu">
+                <a href="../panel/">Inicio</a>
+                <a href="../mi_cuenta/">Mi cuenta</a>
+                <a href="../includes/cerrar_sesion.php"><input type="button" value="Cerrar sesión"></a>
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </div>
+        <div class="content"></div>
+             
         </div>
     </body>
 </html>
