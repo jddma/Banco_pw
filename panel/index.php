@@ -24,6 +24,7 @@
     </head>
     <body>
         <div class="header">
+            <a href="index.php"><img src="../img/logo_panel.png" alt=""></a>
             <h2 class="logo">Mi Banco</h2>
             <input type="checkbox" id="chk">
             <label for="chk" class="show-menu-btn">

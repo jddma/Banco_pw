@@ -106,3 +106,14 @@ input[type = "button"]{
 
     }
 }
+
+h2{
+    margin-left: 10px;
+}
+
+img{
+    height: auto;
+    width: 60px;
+    float: left;
+    margin-top: 20px;
+}
