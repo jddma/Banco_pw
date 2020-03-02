@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "monserrat", sans-serif;
+}
+
+body{
+    background-image: url(../img/background_index.PNG);
+}
+
+.header{
+    height: 100px;
+    background: #34495e;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.logo{
+    line-height: 100px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.menu{
+    float: right;
+    line-height: 100px;
+}
+
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.show-menu-btn, .hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show.show-menu-btn{
+    float: right;
+}
+
+.show-menu-btn i{
+    line-height: 100px;
+}
+
+.menu a:hover, .show-menu-btn:hover, .hide-menu-btn:hover{
+    color: #3498db;
+}
+
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+#content{
+    padding: 0 20px;
+}
+
+input[type = "button"]{
+    border-radius: 7px;
+    color: white;
+    background: red;
+    border: none;
+    padding: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+img.logo-header{
+    height: auto;
+    width: 60px;
+    float: left;
+    margin-top: 20px;
+}
+
+img.user-logo{
+    float: left;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: -23px;
+}
+
+.usuario{
+    height: 50px;
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 40px;
+    background-color: #34495e;
+}
+
+p{
+    margin-left: 150px;
+    padding-top: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+@media screen and (max-width:800px){
+    .show-menu-btn, .hide-menu-btn{
+        display: block;
+    }
+    i{
+        float: right;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu-btn{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #chk:checked ~ .menu{
+        right: 0;
+    }
+    .usuario{
+        margin-top: 20%;
+        margin-left: 0;
+        height: 100px
+    }
+
+    img.user-logo{
+        float: left;
+        width: 100px;
+        margin-left: 40%;
+        margin-top: -18%;
+    }
+
+    p{
+        padding-top: 40px;
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+}

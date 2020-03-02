@@ -17,7 +17,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles_panel.css">
+        <link rel="stylesheet" href="../css/styles_default.css">
         <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
         <title>Inicio</title>
@@ -42,7 +42,7 @@
         <div class="content">
             <div class="usuario">
                 <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
-                <p><?php echo "Bienvenido señor(a) ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
+                <p><?php echo "Usuario: ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
             </div>
         </div>
     </body>
