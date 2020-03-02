@@ -31,7 +31,6 @@
             $_SESSION["documento"]=$rows["no_documento"];
             header("Location: ../panel/");
             exit();
-            break;
         }
     }
 
