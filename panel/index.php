@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="../css/styles_panel.css">
         <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-        <title>Inicio</title>
+        <title>Panel de inicio</title>
     </head>
     <body>
         <div class="header">
