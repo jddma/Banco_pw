@@ -1,4 +1,4 @@
-<?php
+<!--<?php
 
     session_start();
     /**
@@ -11,13 +11,14 @@
         exit();
     }
 
-?>
+?>-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles_default.css">
+        <link rel="stylesheet" href="../css/styles_panel.css">
         <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
         <title>Inicio</title>
@@ -43,6 +44,41 @@
             <div class="usuario">
                 <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
                 <p><?php echo "Usuario: ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
+            </div>
+            <div class="services-section">
+                <div class="inner-width">
+                    <h1 class="section-title">Nuestos Servicios</h1>
+                    <div class="border"></div>
+                    <div class="services-container">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="service-title">Transferencias a cuentas</div>
+                            <div class="service-desc">
+                                
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <div class="service-title">Pagos y Obligaciones</div>
+                            <div class="service-desc">
+                                
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="service-title">Tarjetas de crédito</div>
+                            <div class="service-desc">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
