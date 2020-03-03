@@ -81,7 +81,9 @@
                 </div>
             </div>
             <footer>
-                <p class="footer">2020  - Tu banco ®  |  Bonilla. A, Melo. J, Pájaro. A.</p> 
+                <div class="footer_container">
+                    <p class="footer">2020  - Tu banco ®  |  Bonilla. A, Melo. J, Pájaro. A.</p> 
+               <div>
             </footer>
         </div>
     </body>

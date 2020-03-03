@@ -1,4 +1,4 @@
-<!--<?php
+<?php
 
 session_start();
 /**
@@ -11,7 +11,7 @@ if (! isset($_SESSION["id"]))
     exit();
 }
 
-?>-->
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,7 +20,6 @@ if (! isset($_SESSION["id"]))
     <link rel="stylesheet" href="../css/styles_default.css">
     <link rel="stylesheet" href="../css/styles_transfers.css">
     <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <title>Panel de inicio</title>
 </head>
 <body>
@@ -40,30 +39,29 @@ if (! isset($_SESSION["id"]))
             </label>
         </ul>
     </div>
-    <div class="content">
-        
-        <div class="content">
-            <div class="usuario">
-                <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
-                <p><?php echo "Usuario: ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
-            </div>
-
-            <div class="user-balance"> 
-                <div class="balance">Tu dinero: $<?php echo "_SESSION[saldo]"?> </div>
-            </div>
-            <div class="service-box">
-                <h1>Transferencias a cuentas</h1>
-                <p class="info">Por favor, ingrese los siguientes datos</p>
-                <div class="border"></div>
-                <form action="" method="post" class="transfer-form">
-                    Número de Cuenta <input type="text" placeholder="XXXXX-XXXXX-XXXXX" required><br>
-                    Cantidad a transferir <input type="text" placeholder="10000" required><br>
-                    <input id="submit" type="submit" value="Realizar transferencia">
-                </form>
-            </div>
-        </div>  
+    <div class="content">  
+        <div class="usuario">
+            <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
+            <p><?php echo "Usuario: ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
+        </div>   
+        <form action="" method="post">
+            <p class="ref">Cuenta de origen:</p>
+            <!--esto se tiene que cambiar deacuerdo a las cuentas de cada cliente-->
+            <select name="origen" class="input" required>
+                <option>Cuenta ahorros</option>
+                <option>Cuenta ahorros</option>
+                <option>Cuenta ahorros</option>
+            </select>
+            <p class="ref">Cuenta de destino:</p>
+            <input type="text" class="input" name="destino" placeholder="xxxx-xxxxx-xxxx" required>
+            <p class="ref">Valor a transferir:</p>
+            <input type="number" class="input" name="destino" placeholder="000000000" required>
+            <input type="submit" id="submit" value="Transferir">
+        </form>
         <footer>
-            <p class="footer">2020  - Tu banco ®  |  Bonilla. A, Melo. J, Pájaro. A.</p> 
+            <div class="footer_container">
+                <p class="footer">2020  - Tu banco ®  |  Bonilla. A, Melo. J, Pájaro. A.</p> 
+            </div>
         </footer>
     </div>
 </body>

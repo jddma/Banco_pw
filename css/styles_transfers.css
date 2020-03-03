@@ -1,32 +1,11 @@
-.user-balance{  
-    width: 25%;
-    padding: 30px;
-    float: right;
-    background: rgba(247, 247, 247, .9);
-    border: black solid 2px;
-    border-radius: 35px;
-    margin-top: 60px;
-    margin-left: 30px;
-    margin-right: 30px;
-    transition: .5s;
-}
-
-.balance{
-    font-weight: bold;
-}
-
-.user-balance:hover{
-    width: 28%;
-}
-
-.service-box{
-    padding: 30px 0;  
+form{
+    padding: 20px;
+    border-radius: 30px;
+    margin: auto;
     background: #34495e;
-    background-size: cover;
-    border-radius: 40px;
-    margin-top: 60px;
-    margin-left: 30px;
-    margin-right: 400px;
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
 }
 
 h1{
@@ -36,47 +15,32 @@ h1{
     font-size: 30px;
 }
 
-.info{
-    margin-left: 20px;
-    margin-bottom: 30px;
-    color: white;
+.ref{
+    margin-left: 0;
+    margin-right: 0;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
-.transfer-form{
-    margin-left: 20px;
-    margin-bottom: 20px;
-    color: white;
-    font-size: 17px;
-}
-
-.transfer-container{
-    padding: 30px;
-}
-
-.border{
-    width: 90%;
-    height: 3px;
-    background: black;
-    margin-left: 15px;
-    margin-bottom: 20px;
-}
-
-input{
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding-left: 10px;
+.input, select{
+    text-align: center;
+    width: 80%;
     border-radius: 10px;
     border-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
 #submit{
-    margin-left: 0;
-    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
     width: 25%;
     text-align: center;
     text-transform: uppercase;
-    transition: .2s;
+    transition: 1s;
+    width: 80%;
 }
 
 #submit:hover{
