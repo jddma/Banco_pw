@@ -43,7 +43,7 @@
         <div class="content">
             <div class="usuario">
                 <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
-                <p><?php echo "Usuario: ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
+                <p><?php echo "Bienvendo señor(a) ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
             </div>
             <div class="services-section">
                 <div class="inner-width">
@@ -52,7 +52,7 @@
                     <div class="services-container">
                         <div class="service-box">
                             <div class="service-icon">
-                                <i class="fas fa-exchange-alt"></i>
+                                <a href="../transferencias"><img src="../img/transferir.png" alt="" class="service-logo"></a>
                             </div>
                             <div class="service-title">Transferencias a cuentas</div>
                             <div class="service-desc">
@@ -61,7 +61,7 @@
                         </div>
                         <div class="service-box">
                             <div class="service-icon">
-                                <i class="fas fa-qrcode"></i>
+                                <a href="#"><img src="../img/pagos.png" alt="" class="service-logo"></i></a>
                             </div>
                             <div class="service-title">Pagos y Obligaciones</div>
                             <div class="service-desc">
@@ -70,7 +70,7 @@
                         </div>
                         <div class="service-box">
                             <div class="service-icon">
-                                <i class="fas fa-credit-card"></i>
+                                <a href=#><img src="../img/tarjeta_credito.png" alt="" class="service-logo"></a>
                             </div>
                             <div class="service-title">Tarjetas de crédito</div>
                             <div class="service-desc">
@@ -80,6 +80,9 @@
                     </div>
                 </div>
             </div>
+            <footer>
+                <p class="footer">2020  - Tu banco ®  |  Bonilla. A, Melo. J, Pájaro. A.</p> 
+            </footer>
         </div>
     </body>
 </html>
