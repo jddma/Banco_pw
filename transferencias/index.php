@@ -49,14 +49,29 @@ if (! isset($_SESSION["id"]))
             <p class="ref">Cuenta de origen:</p>
             <!--esto se tiene que cambiar deacuerdo a las cuentas de cada cliente-->
             <select name="origen" class="input" required>
-                <option>Cuenta ahorros</option>
-                <option>Cuenta ahorros</option>
-                <option>Cuenta ahorros</option>
+                <?php
+
+                require "../includes/database.php";
+                $sql="SELECT numero_producto FROM productos WHERE id_usuario= :id_usuario";
+                $result=$conn->prepare($sql);
+                $result->bindValue(":id_usuario", $_SESSION["id"]);
+                $result->execute();
+                while ($rows=$result->fetch(PDO::FETCH_ASSOC)):
+
+                ?>
+
+                <option><?php echo $rows["numero_producto"] ?></option>
+
+                <?php
+
+                endwhile;
+
+                ?>
             </select>
             <p class="ref">Cuenta de destino:</p>
             <input type="text" class="input" name="destino" placeholder="xxxx-xxxxx-xxxx" required>
             <p class="ref">Valor a transferir:</p>
-            <input type="number" class="input" name="destino" placeholder="000000000" required>
+            <input type="number" class="input" name="valor" placeholder="000000000" required>
             <input type="submit" id="submit" value="Transferir">
         </form>
         <footer>

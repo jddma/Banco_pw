@@ -24,7 +24,7 @@
         if (password_verify($_POST["password"], $rows["clave"] ))
         {
             session_start();
-            $_SESSION["id"]=$rows["clave"];
+            $_SESSION["id"]=$rows["id_usuario"];
             $_SESSION["apellidos"]=$rows["apellidos"];
             $_SESSION["nombres"]=$rows["nombres"];
             $_SESSION["correo"]=$rows["correo"];
