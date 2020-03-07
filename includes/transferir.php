@@ -1,6 +1,6 @@
 <?php
 
-    if(! isset($_POST["destino"]]))
+    if(! isset($_POST["destino"]))
     {
         header("Location: ../panel");
         exit();
@@ -8,11 +8,11 @@
 
     require "database.php";
 
-    $sql="SELECT numero_producto, saldo WHERE numero_producto= :numero_producto";
-    $result->prepare($sql);
+    $sql="SELECT numero_producto, saldo FROM productos WHERE numero_producto= :numero_producto";
+    $result=$conn->prepare($sql);
     $result->bindValue(":numero_producto", $_POST["destino"]);
     $result->execute();
-    if($resul->rowCount() == 0)
+    if($result->rowCount() == 0)
     {
         header("Location: ../transferencias");
         exit();
@@ -23,9 +23,9 @@
         $valor_actual_destino=$rows["saldo"];
     }
 
-    $sql"SELECT saldo FROM productos WHERE numero_producto= :numero_producto";
-    $result->prepare();
-    $result->bindValue(":numero_productos", $_POST["origen"]);
+    $sql="SELECT saldo FROM productos WHERE numero_producto= :numero_producto";
+    $result=$conn->prepare($sql);
+    $result->bindValue(":numero_producto", $_POST["origen"]);
     $result->execute();
     if($result->rowCount() == 0)
     {
@@ -55,7 +55,7 @@
 
     $sql="UPDATE productos SET saldo= :final_origen WHERE numero_producto= :numero_producto";
     $result=$conn->prepare($sql);
-    $result->bindValue("final_destino", $valor_final_origen);
+    $result->bindValue("final_origen", $valor_final_origen);
     $result->bindValue("numero_producto", $_POST["origen"]);
     $result->execute();
 

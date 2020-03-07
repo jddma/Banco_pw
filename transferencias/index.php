@@ -45,7 +45,7 @@ if (! isset($_SESSION["id"]))
             <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
             <p><?php echo "Usuario: ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
         </div>   
-        <form action="" method="post">
+        <form action="../includes/transferir.php" method="post">
             <p class="ref">Cuenta de origen:</p>
             <!--esto se tiene que cambiar deacuerdo a las cuentas de cada cliente-->
             <select name="origen" class="input" required>
