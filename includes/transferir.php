@@ -72,11 +72,8 @@
     
     $asuntoEmail="Verificar transferecia";
     $mensaje="Señor " . $_SESSION["apellidos"] . " " . $_SESSION["nombres"] . " le informamos que se ha efectuado una transferencia"
-              . "el día de hoy $date-$month-$year desde la direccióm ip: " . $_SERVER["REMOTE_ADDR"];
+              . "el día de hoy $day-$month-$year desde la direccióm ip: " . $_SERVER["REMOTE_ADDR"];
 
     mail($destinatarioEmail, $asuntoEmail, $mensaje, $header);
-
-    header("Location: ../");
-    exit();
 
 ?>
