@@ -59,8 +59,24 @@
     $result->bindValue("numero_producto", $_POST["origen"]);
     $result->execute();
 
+    session_start();
+    $date=getdate();
+    $year=$date["year"];
+    $month=$date["mon"];
+    $day=$date["mday"];
+
+    $origenNombre="Tu banco";
+    $origenEmail='no-reply@banco.jddma.com';
+    $destinatarioEmail=$_SESSION["correo"];
+    $header = "From: " . $origenNombre . " <" . $origenEmail . ">\r\n";
+    
+    $asuntoEmail="Verificar transferecia";
+    $mensaje="Señor " . $_SESSION["apellidos"] . " " . $_SESSION["nombres"] . " le informamos que se ha efectuado una transferencia"
+              . "el día de hoy $date-$month-$year desde la direccióm ip: " . $_SERVER["REMOTE_ADDR"];
+
+    mail($destinatarioEmail, $asuntoEmail, $mensaje, $header);
+
     header("Location: ../");
     exit();
-
 
 ?>
