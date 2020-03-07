@@ -9,12 +9,12 @@
     $email=htmlentities($_POST["email"]);
     if(! filter_var($email, FILTER_VALIDATE_EMAIL))
     {
-        header("Location: ../registrarse");
+        header("Location: ../registrarse?email_valido=false");
         exit();
     }
     else if($_POST["password"] != $_POST["verify_password"])
     {
-        header("Location: ../registrarse/");
+        header("Location: ../registrarse/?pwd=false");
         exit();
     }
     else
@@ -27,7 +27,7 @@
         $result->execute();
         if($result->rowCount() > 0)
         {
-            header("Location: ../registrarse/");
+            header("Location: ../?existente=true");
             exit();
         }
 
@@ -40,7 +40,7 @@
         $result->bindValue(":clave", password_hash($_POST["password"], PASSWORD_DEFAULT));
         $result->execute();
 
-        header("Location: ../");
+        header("Location: ../?registro=true");
 
     }
 

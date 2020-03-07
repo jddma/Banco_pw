@@ -14,6 +14,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles_index.css">
+        <script type="text/javascript" src="js/dialogos_index.js"></script>
         <title>TU BANCO</title>
     </head>
     <body>

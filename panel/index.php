@@ -1,4 +1,4 @@
-<!--<?php
+<?php
 
     session_start();
     /**
@@ -11,7 +11,7 @@
         exit();
     }
 
-?>-->
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="../css/styles_panel.css">
         <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <script type="text/javascript" src="../js/dialogos_panel.js"></script>
         <title>Panel de inicio</title>
     </head>
     <body>

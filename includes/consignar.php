@@ -14,7 +14,7 @@
     $result->execute();
     if($result->rowCount() == 0)
     {
-        header("Location: ../consignaciones");
+        header("Location: ../consignaciones?origen=false");
         exit();
     }
 
@@ -30,7 +30,7 @@
     $result->bindValue(":numero_producto", $_POST["destino"]);
     $result->execute();
 
-    header("Location: ../");
+    header("Location: ../?consignacion=true");
     exit();
 
 ?>

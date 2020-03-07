@@ -15,7 +15,7 @@
 
     if($result->rowCount() == 0)
     {
-        header("Location: ../");
+        header("Location: ../?usuario=false");
         exit();
     }
 

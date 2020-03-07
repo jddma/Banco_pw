@@ -14,7 +14,7 @@
     $result->execute();
     if($result->rowCount() == 0)
     {
-        header("Location: ../retirar/");
+        header("Location: ../retirar/?origen=false");
         exit();
     }
 
@@ -26,7 +26,7 @@
 
     if($saldo_actual < $_POST["valor"])
     {
-        header("Location: ../retiros/");
+        header("Location: ../retiros/?monto=false");
         exit();
     }
 
@@ -37,7 +37,7 @@
     $result->bindValue(":numero_producto", $cuenta);
     $result->execute();
 
-    header("Location: ../");
+    header("Location: ../?retiro=true");
     exit();
 
 ?>

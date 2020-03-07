@@ -21,6 +21,7 @@ if (! isset($_SESSION["id"]))
         <link rel="stylesheet" href="../css/styles_transfers.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
         <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
+        <script type="text/javascript" src="../js/dialogos_transferencias.js"></script>
         <title>Panel transferencias</title>
     </head>
     <body>
