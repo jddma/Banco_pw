@@ -61,9 +61,9 @@
                         </div>
                         <div class="service-box">
                             <div class="service-icon">
-                                <a href="#"><img src="../img/pagos.png" alt="" class="service-logo"></i></a>
+                                <a href="../retiros/"><img src="../img/pagos.png" alt="" class="service-logo"></i></a>
                             </div>
-                            <div class="service-title">Pagos y Obligaciones</div>
+                            <div class="service-title">Retirar desde cuenta</div>
                             <div class="service-desc">
                                 
                             </div>
@@ -72,7 +72,7 @@
                             <div class="service-icon">
                                 <a href=#><img src="../img/tarjeta_credito.png" alt="" class="service-logo"></a>
                             </div>
-                            <div class="service-title">Tarjetas de crédito</div>
+                            <div class="service-title">Consignación a cuenta</div>
                             <div class="service-desc">
                                 
                             </div>

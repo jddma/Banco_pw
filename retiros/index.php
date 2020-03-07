@@ -1,27 +1,27 @@
 <?php
 
-session_start();
-/**
- * para devolver al usuario en caso de que quiera ingresar sin haber 
- * iniciado sesion
- *  */    
-if (! isset($_SESSION["id"]))
-{
-    header("Location: ../");
-    exit();
-}
+    session_start();
+    /**
+     * para devolver al usuario en caso de que quiera ingresar sin haber 
+     * iniciado sesion
+     *  */    
+    if (! isset($_SESSION["id"]))
+    {
+        header("Location: ../");
+        exit();
+    }
 
 ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles_default.css">
         <link rel="stylesheet" href="../css/styles_transfers.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
         <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
-        <title>Panel transferencias</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <title>Retiros</title>
     </head>
     <body>
         <div class="header">
@@ -40,14 +40,13 @@ if (! isset($_SESSION["id"]))
                 </label>
             </ul>
         </div>
-        <div class="content">  
+        <div class="content">
             <div class="usuario">
                 <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
                 <p><?php echo "Usuario: ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
-            </div>   
-            <form action="../includes/transferir.php" method="post">
-                <p class="ref">Cuenta de origen:</p>
-                <!--esto se tiene que cambiar deacuerdo a las cuentas de cada cliente-->
+            </div>
+            <form action="../includes/retirar.php" method="post">
+                <p class="ref">Cuenta de destino</p>
                 <select name="origen" class="input" required>
                     <?php
 
@@ -68,11 +67,9 @@ if (! isset($_SESSION["id"]))
 
                     ?>
                 </select>
-                <p class="ref">Cuenta de destino:</p>
-                <input type="text" class="input" name="destino" placeholder="xxxx-xxxxx-xxxx" required>
-                <p class="ref">Valor a transferir:</p>
-                <input type="number" class="input" name="valor" placeholder="000000000" required>
-                <input type="submit" id="submit" value="Transferir">
+                <p class="ref">Valor a retirar</p>
+                <input type="number" name="valor" class="input" placeholder="############" required>
+                <input type="submit" id="submit" value="Retirar">
             </form>
             <footer>
                 <div class="footer_container">

@@ -64,6 +64,8 @@
     $year=$date["year"];
     $month=$date["mon"];
     $day=$date["mday"];
+    $hour=$date["hours"];
+    $minute=$date["minutes"];
 
     $origenNombre="Tu banco";
     $origenEmail='no-reply@banco.jddma.com';
@@ -72,7 +74,7 @@
     
     $asuntoEmail="Verificar transferecia";
     $mensaje="Señor " . $_SESSION["apellidos"] . " " . $_SESSION["nombres"] . " le informamos que se ha efectuado una transferencia"
-              . "el día de hoy $day-$month-$year desde la direccióm ip: " . $_SERVER["REMOTE_ADDR"];
+              . " el día de hoy $day-$month-$year a las $hour:$minute desde la dirección ip: " . $_SERVER["REMOTE_ADDR"];
 
     mail($destinatarioEmail, $asuntoEmail, $mensaje, $header);
 
