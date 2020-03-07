@@ -15,13 +15,13 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles_default.css">
         <link rel="stylesheet" href="../css/styles_transfers.css">
         <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-        <title>Retiros</title>
+        <title>Mi cuenta</title>
     </head>
     <body>
         <div class="header">
@@ -45,9 +45,9 @@
                 <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
                 <p><?php echo "Usuario: ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
             </div>
-            <form action="../includes/retirar.php" method="post">
-                <p class="ref">Cuenta de origen</p>
-                <select name="origen" class="input" required>
+            <form action="../includes/consignar.php" method="post">
+                <p class="ref">Cuenta de destino</p>
+                <select name="destino" class="input" required>
                     <?php
 
                     require "../includes/database.php";
@@ -67,14 +67,14 @@
 
                     ?>
                 </select>
-                <p class="ref">Valor a retirar</p>
+                <p class="ref">Valor a consignar</p>
                 <input type="number" name="valor" class="input" placeholder="############" required>
-                <input type="submit" id="submit" value="Retirar">
+                <input type="submit" id="submit" value="Consignar">
             </form>
             <footer>
                 <div class="footer_container">
                     <p class="footer">2020  - Tu banco ®  |  Bonilla. A, Melo. J, Pájaro. A.</p> 
-                </div>
+               <div>
             </footer>
         </div>
     </body>

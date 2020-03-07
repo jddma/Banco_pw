@@ -70,7 +70,7 @@
                         </div>
                         <div class="service-box">
                             <div class="service-icon">
-                                <a href=#><img src="../img/tarjeta_credito.png" alt="" class="service-logo"></a>
+                                <a href="../consignaciones/"><img src="../img/tarjeta_credito.png" alt="" class="service-logo"></a>
                             </div>
                             <div class="service-title">Consignación a cuenta</div>
                             <div class="service-desc">
