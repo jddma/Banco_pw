@@ -76,4 +76,7 @@
 
     mail($destinatarioEmail, $asuntoEmail, $mensaje, $header);
 
+    header("Location: ../panel/");
+    exit();
+
 ?>
