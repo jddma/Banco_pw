@@ -1,6 +1,5 @@
 let url =String(window.location);
-let eror=false;
-let msg=false;
+let error=false;
 if(url.indexOf("usuario=false") != -1)
 {
     alert("Usuario no registrado");
@@ -17,7 +16,7 @@ else if(url.indexOf("existente=true") != -1)
     error=true;
 }else if(url.indexOf("nueva_clave=true") != -1){
     alert("Su contraseña ha sido reestablecida correctamente");
-    msg = true;
+    error = true;
 }
 
 if(error)
