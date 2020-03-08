@@ -74,7 +74,7 @@
     
     $asuntoEmail="Verificar transferecia";
     $mensaje="Señor " . $_SESSION["apellidos"] . " " . $_SESSION["nombres"] . " le informamos que se ha efectuado una transferencia"
-              . " el día de hoy $day-$month-$year desde la dirección ip: " . $_SERVER["REMOTE_ADDR"];
+              . " el día de hoy $day-$month-$year desde la dirección ip: " . $_SERVER["REMOTE_ADDR"]. "\nGracias por usar Tu Banco.";
 
     mail($destinatarioEmail, $asuntoEmail, $mensaje, $header);
 

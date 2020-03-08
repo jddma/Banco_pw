@@ -18,9 +18,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles_default.css">
+        <link rel="stylesheet" href="../css/styles_account.css">
         <!--<link rel="stylesheet" href="../css/fontawesome.css">-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
         <title>Mi cuenta</title>
+        <script src="../js/verificar_clave.js"></script>
     </head>
     <body>
         <div class="header">
@@ -43,6 +45,29 @@
             <div class="usuario">
                 <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
                 <p><?php echo "Usuario: ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
+            </div>
+        </div>
+        <div class="info">
+            <p class= "menu_title">Información Personal</p>
+            <div>
+                
+            </div>
+        </div>
+        <div class="info">
+            <p class= "menu_title">Mi dinero</p>
+            <div>
+                
+            </div>
+        </div>
+        <div class="info">
+            <p class= "menu_title">Cambiar mi contraseña</p>
+            <div class= "change_password">
+                <form action="../includes/cambiar_clave.php" method="post" onsubmit="verificar_clave()">
+                    <input type="email" name="mail" placeholder="Ingrese su correo" required>
+                    <input id="pass1" type="password" name="password" placeholder="Nueva contraseña" required>
+                    <input id="pass2" type="password" name="verify_password" placeholder="Repetir nueva contraseña" required>
+                    <input type="submit" value="Cambiar mi contraseña">
+                </form>
             </div>
         </div>
     </body>

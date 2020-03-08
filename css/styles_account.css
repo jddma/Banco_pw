@@ -1,0 +1,46 @@
+.info{
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(25, 50, 88, 0.9);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.menu_title{
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s;
+    margin-left: 15px;
+}
+.change_password{
+
+}
+
+input[type = "password"], [type = "email"]{
+    border: none;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+    width: 90%;
+    height: 25px;
+    text-align: center;
+}
+
+input[type = "submit"]{
+    border: none;
+    border-radius: 15px;
+    background: red;
+    margin: 15px;
+    width: 90%;
+    height: 25px;
+    transition: .2s;
+}
+input[type = "submit"]:hover{
+    color: white;
+    text-transform: uppercase;
+}

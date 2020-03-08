@@ -3,6 +3,6 @@ function verificar_clave(){
     var pass2 = document.getElementById("pass2").value;
 
     if(pass1 != pass2){
-        alert("Las contraseñas no coinciden, intentelo nuevamente");
+        alert("Las contraseñas no coinciden, intentelo nuevamente.");
     }
 }
