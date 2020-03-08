@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles_index.css">
+        <script type="text/javascript" src="../js/verificar_clave.js"></script>
+        <title>Registrarse</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="title">¿Ha olvidado su contraseña?</h1>
+            <form action="../includes/recuperar_clave.php" method="post" onsubmit="verificar_clave()">
+                <input class="login" type="email" name="mail" placeholder="Ingrese su correo" required>
+                <input id="pass1" class="login" type="password" name="password" placeholder="Nueva contraseña" required>
+                <input id="pass2" class="login" type="password" name="verify_password" placeholder="Nueva contraseña" required>
+                <input class="submit" type="submit" value="Cambiar contraseña">
+            </form>
+        </div>
+    </body>
+</html>

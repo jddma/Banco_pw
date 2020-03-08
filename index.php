@@ -24,7 +24,7 @@
                 <input class="login" type="text" name="email" placeholder="Ingrese su correo" required>
                 <input class="login" type="password" name="password" placeholder="Ingrese su contraseña" required>
                 <input class="submit" type="submit" value="Ingresar">
-                <a href="registrarse/"><p>¿Ha olvidado su contraseña?</p></a>
+                <a href="nueva_clave/"><p>¿Ha olvidado su contraseña?</p></a>
                 <a href="registrarse/"><p>¿No tiene una cuenta?</p></a>
             </form>
         </div>
