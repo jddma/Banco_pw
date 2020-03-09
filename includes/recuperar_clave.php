@@ -19,7 +19,7 @@
             session_start();
             $clave_respaldo = generarClave();
             $mensaje = "Estimado usuario hemos restablecido su contraseña. Esta nueva contraseña es de carácter 
-            provisional, por lo que le recomendamos cambiarla desde la configuración de su cuenta.\nNueva contraseña: ". 
+            provisional, por lo que le recomendamos cambiarla desde la configuración de su cuenta. Nueva contraseña: ". 
             $clave_respaldo. "\nGracias por usar Tu Banco.";
             $origenNombre="Tu banco";
             $origenEmail='no-reply@banco.jddma.com';

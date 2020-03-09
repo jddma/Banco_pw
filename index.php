@@ -1,5 +1,9 @@
 <?php
 
+    /***
+     * en caso de que el usuario ya tenga una sesion iniciada lo redirecciona
+     * al panel
+     * * */
     session_start();
     if(isset($_SESSION["id"]))
     {

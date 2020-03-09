@@ -72,7 +72,7 @@ if (! isset($_SESSION["id"]))
                 <p class="ref">Cuenta de destino:</p>
                 <input type="text" class="input" name="destino" placeholder="xxxx-xxxxx-xxxx" required>
                 <p class="ref">Valor a transferir:</p>
-                <input type="number" class="input" name="valor" placeholder="000000000" required>
+                <input type="number" class="input" name="valor" min="1" placeholder="000000000" required>
                 <input type="submit" id="submit" value="Transferir">
             </form>
             <footer>
