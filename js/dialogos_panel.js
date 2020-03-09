@@ -19,6 +19,7 @@ else if(url.indexOf("consignacion=true") != -1)
 else if(url.indexOf("nueva_clave=true") != -1)
 {
     alert("Contraseña modificada exitosamente");
+    error=true;
 }
 
 if(error)
