@@ -14,11 +14,7 @@ else if(url.indexOf("existente=true") != -1)
 {
     alert("El usuaro ya se encuentra registrado");
     error=true;
-}else if(url.indexOf("nueva_clave=true") != -1){
-    alert("Su contraseña ha sido reestablecida correctamente");
-    error = true;
-}
-else if(url.indexOf("pwd=false") != -1)
+}else if(url.indexOf("pwd=false") != -1)
 {
     alert("Contraseña incorrecta");
     error=true;
