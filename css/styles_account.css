@@ -1,7 +1,7 @@
 .info{
     width: 50%;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 25%;
     margin-right: 5%;
     background-color: rgba(25, 50, 88, 0.9);
     padding: 10px;
@@ -14,11 +14,17 @@
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: .2s;
     margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-.change_password{
-
+.description{
+    color: #FFF;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 input[type = "password"], [type = "email"]{
@@ -43,4 +49,23 @@ input[type = "submit"]{
 input[type = "submit"]:hover{
     color: white;
     text-transform: uppercase;
+}
+
+.balance{
+    margin:0;
+    font-size: 60px;
+    text-align: center;
+}
+
+.create_account{
+    width: 30%;
+    height: 30px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.create_account:hover{
+    background: rgb(39, 221, 39);
 }

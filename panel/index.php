@@ -44,7 +44,7 @@
         <div class="content">
             <div class="usuario">
                 <img src="../img/user_logo.png" alt="Usuario_Logo" class="user-logo">
-                <p><?php echo "Bienvendo señor(a) ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
+                <p><?php echo "Bienvendo(a) señor(a) ". $_SESSION["apellidos"]. " ". $_SESSION["nombres"]. "."?></p>
             </div>
             <div class="services-section">
                 <div class="inner-width">

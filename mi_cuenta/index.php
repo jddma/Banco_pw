@@ -48,19 +48,35 @@
             </div>
         </div>
         <div class="info">
-            <p class= "menu_title">Información Personal</p>
+            <h2 class= "menu_title">Información Personal</h2>
             <div>
                 
             </div>
         </div>
         <div class="info">
-            <p class= "menu_title">Mi dinero</p>
+            <h2 class="menu_title">Cree su cuenta ahora</h2>
+            <p class="description">No te quedes con las ganas y aprovecha todos los beneficios que ofrece la cuenta Tu Banco.</p>
+            <a href="../crear_cuenta/"><button class="create_account">Ir</button></a>
+        </div>
+        <div class="info">
+            <h2 class= "menu_title">Mi dinero</h2>
             <div>
-                
+                <p class="balance">
+                    <?php
+                        require "../includes/database.php";
+                        $sql = $conn->prepare("SELECT saldo FROM productos WHERE :usuario = productos.id_usuario;");
+                        $sql->setFetchMode(PDO::FETCH_ASSOC);
+                        $sql->bindValue(":usuario", $_SESSION["id"]);
+                        $sql->execute();
+                        while($columna = $sql->fetch()){
+                            echo "$ ". $columna["saldo"];
+                        }    
+                    ?>
+                </p>
             </div>
         </div>
         <div class="info">
-            <p class= "menu_title">Cambiar mi contraseña</p>
+            <h2 class= "menu_title">Cambiar mi contraseña</h2>
             <div class= "change_password">
                 <form action="../includes/cambiar_clave.php" method="post" onsubmit="verificar_clave()">
                     <input type="email" name="mail" placeholder="Ingrese su correo" required>
