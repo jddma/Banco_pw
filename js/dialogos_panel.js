@@ -21,6 +21,11 @@ else if(url.indexOf("nueva_clave=true") != -1)
     alert("Contraseña modificada exitosamente");
     error=true;
 }
+else if(url.indexOf("nueva_cuenta=true") != -1)
+{
+    alert("Nueva cuenta creada correctamente");
+    error=true;
+}
 
 if(error)
 {
