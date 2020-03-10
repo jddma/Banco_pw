@@ -56,23 +56,37 @@
         <div class="info">
             <h2 class="menu_title">Cree su cuenta ahora</h2>
             <p class="description">No te quedes con las ganas y aprovecha todos los beneficios que ofrece la cuenta Tu Banco.</p>
-            <a href="../crear_cuenta/"><button class="create_account">Ir</button></a>
+            <a href="../crear_cuenta/"><input type="button" value="Ir" id="create_account"></a>
         </div>
         <div class="info">
             <h2 class= "menu_title">Mi dinero</h2>
             <div>
-                <p class="balance">
-                    <?php
-                        require "../includes/database.php";
-                        $sql = $conn->prepare("SELECT saldo FROM productos WHERE :usuario = productos.id_usuario;");
-                        $sql->setFetchMode(PDO::FETCH_ASSOC);
-                        $sql->bindValue(":usuario", $_SESSION["id"]);
-                        $sql->execute();
-                        while($columna = $sql->fetch()){
-                            echo "$ ". $columna["saldo"];
-                        }    
-                    ?>
-                </p>
+                <?php
+                require "../includes/database.php";
+                $sql = $conn->prepare("SELECT saldo, numero_producto FROM productos WHERE :usuario = productos.id_usuario;");
+                $sql->setFetchMode(PDO::FETCH_ASSOC);
+                $sql->bindValue(":usuario", $_SESSION["id"]);
+                $sql->execute();
+                if($sql->rowCount() == 0)
+                {
+                    echo "<p id=\"aviso\">No tiene cuentas activas</p>";
+                }
+                else
+                {
+                    echo "<table class='balance_table'>\n";
+                    echo "\t\t\t\t\t<tr>\n";
+                    echo "\t\t\t\t\t\t<th>Cuenta</th><th>Saldo ($)</th>\n";
+                    echo "\t\t\t\t\t</tr>\n";
+                    
+                    while($rows = $sql->fetch())
+                    {
+                        echo "\t\t\t\t\t<tr>\n";
+                            echo "\t\t\t\t\t\t<td class='cell'>" . $rows["numero_producto"] . "</td><td class='cell'>" . $rows["saldo"] . "</td>\n";
+                        echo "\t\t\t\t\t</tr>\n";
+                    }
+                    echo "\t\t\t\t</table>";
+                }
+                ?> 
             </div>
         </div>
         <div class="info">

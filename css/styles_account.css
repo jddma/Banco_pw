@@ -1,8 +1,8 @@
 .info{
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-right: 5%;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
     background-color: rgba(25, 50, 88, 0.9);
     padding: 10px;
     border-radius: 15px;
@@ -46,18 +46,46 @@ input[type = "submit"]{
     height: 25px;
     transition: .2s;
 }
+
 input[type = "submit"]:hover{
     color: white;
     text-transform: uppercase;
 }
 
-.balance{
-    margin:0;
-    font-size: 60px;
-    text-align: center;
+#aviso{
+    text-align: left;
 }
 
-.create_account{
+.balance_table{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 15px;
+}
+
+th{
+    background-color: #246355;
+    color: white;
+    border-bottom: solid 5px #0f362D;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover{
+    background-color: #369681;
+    color: white;
+}
+
+#create_account{
     width: 30%;
     height: 30px;
     margin-bottom: 15px;
@@ -66,6 +94,6 @@ input[type = "submit"]:hover{
     transition: .2s;
 }
 
-.create_account:hover{
+#create_account:hover{
     background: rgb(39, 221, 39);
 }
