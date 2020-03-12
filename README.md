@@ -9,5 +9,5 @@ Codigo fuente de una pagina web que tiene el objetivo de simular un panel de adm
 * Andres Pajaro
 * Juan Diego Melo
 
-## Docente
+### Docente
 * Emilio Barajas
